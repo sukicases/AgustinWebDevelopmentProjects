@@ -1,0 +1,248 @@
+@import url('https://fonts.google.com/specimen/Raleway');
+@import url('https://fonts.google.com/specimen/Open+Sans');
+
+*{
+  /*margin: 0;
+  padding: 0;*/
+	box-sizing: border-box;
+}
+
+body{
+	color: black;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.1em;
+	margin: 0;
+}
+
+a{
+	color: #3da08f;
+}
+
+img{
+	max-width: 100%;
+}
+
+.radius8{
+  border-radius: 8px;
+}
+
+.radius5{
+  border-radius: 5px;
+}
+
+.spaceTop{
+  margin-top: 15px;
+}
+
+h1, h2, h4{
+	font-family: 'Raleway', sans-serif;
+}
+
+h2{
+	font-size: 1.8em;
+	margin-top: 0;
+}
+
+.container{
+	padding: 30px;
+	margin: 0 auto;
+	max-width: 100%;
+	width: 1200px;
+}
+
+.flex{
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.align-start{
+	align-items: flex-start;
+}
+
+/*This is for divs of center page, all items*/
+.flex > div,
+.flex > ul {
+	flex: 1;
+}
+
+.flex > div:first-child{
+	margin-right: 20px;
+}
+
+.flex > div:last-child {
+	margin-left: 20px
+}
+
+
+nav{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin: 30px 0;
+}
+
+nav ul{
+	display: flex;
+	padding: 0;
+	list-style-type: none;
+}
+
+nav ul li{
+	margin-left: 50px;
+}
+
+nav ul a{
+	color: black;
+	font-family: 'Raleway', sans-serif;
+	text-decoration: none;
+}
+
+form{
+	display: flex;
+}
+
+input{
+	border: 1px solid;
+  border-color: #3065F8;
+	border-radius: 2px;
+	font-family: 'Raleway', sans-serif;
+	font-size: 14px;
+	flex: 0.7;
+	padding: 15px;
+}
+
+button{
+	border: 1px solid;
+  border-color: #3065F8;;
+	background-color: #3065F8;
+	border-radius: 2px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	color: #fff;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 700;
+	font-size: 14px;
+	flex: 0.3;
+	padding: 15px;
+	margin-left: 10px;
+}
+
+.light-grayishblue{
+	background-color: #F6F6FE;
+	margin-top: 100px;
+	position: relative;
+	padding: 50px 0;
+}
+
+.light-grayishblue::before{
+	content: '';
+	background-image: url('images/bg-curve-desktop.svg');
+	background-size: cover;
+	background-position: center center;
+	position: absolute;
+	top: -60px;
+	left: 0;
+	height: 60px;
+	width: 100%;
+}
+
+.testimonial-box{
+	background-color: #fff;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	border-radius: 5px;
+	padding: 25px;
+	margin-top: 40px;
+	width: 62%;
+}
+
+.testimonial-box p{
+	font-size: 10px;
+	letter-spacing: 1px;
+	line-height: 1.7;
+}
+
+small{
+  font-size: 11px;
+  color: gray;
+}
+
+.user-info{
+	display: flex;
+	margin-top: 20px;
+}
+
+.user-info img{
+	border-radius: 50%;
+	height: 40px;
+	margin-right: 10px;
+	width: 40px;
+}
+
+.user-info h4{
+	font-weight: 700;
+	margin: 0;
+  font-size: 13px;
+}
+
+.grayishblue{
+	background-color: #585989;
+	color: #fff;
+	padding: 50px 0;
+}
+
+.grayishblue form{
+	flex-direction: column;
+}
+
+.grayishblue form input{
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	border: none;
+	flex: 1;
+}
+
+.grayishblue form button{
+	margin: 20px 0 0;
+	width: 50%;
+}
+
+footer{
+	background-color: #070439;
+	color: #F6F6FE;
+	padding: 50px 0;
+  font-size: 14px;
+}
+
+footer ul{
+	list-style-type: none;
+}
+
+footer ul li{
+	margin-bottom: 20px;
+}
+
+footer .social-media{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+footer .circle{
+	border: 1px solid #F6F6FE;
+	border-radius: 50%;
+	color: #F6F6FE;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	margin-right: 10px;
+	height: 35px;
+	width: 35px;
+	text-decoration: none;
+}
+
+.imagecircle{
+  padding: 5px;
+}
+
+footer p{
+	text-align: right;
+}
